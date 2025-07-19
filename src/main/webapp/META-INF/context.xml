@@ -2,7 +2,7 @@
 <Context>
     <Resource name="jdbc/users"
               auth="Container"
-              type="jakarta.sql.DataSource"
+              type="javax.sql.DataSource"
               username="root"
               password=""
               driverClassName="com.mysql.cj.jdbc.Driver"
