@@ -22,6 +22,7 @@
     <div class="card-body">
       <form method="post" action="/user/edit">
         <div class="form-group">
+          <input type="hidden" name="id" value="${user.id}"/>
           <label for="exampleInputEmail1">Nazwa</label>
           <input name="username" type="text" value="${user.userName}" class="form-control">
         </div>
