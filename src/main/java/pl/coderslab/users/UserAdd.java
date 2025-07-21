@@ -23,7 +23,7 @@ public class UserAdd extends HttpServlet {
         user.setEmail(request.getParameter("email"));
         user.setPassword(request.getParameter("password"));
         userDao.create(user);
-        response.sendRedirect(request.getContextPath() + "/user/list");
+        response.sendRedirect("/user/list");
     }
 }
 
