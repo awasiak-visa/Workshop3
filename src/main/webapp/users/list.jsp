@@ -38,7 +38,7 @@
                             <td>${user.email}</td>
                             <td><a href="/user/delete?id=${user.id}">Usuń</a> <a
                                     href="/user/edit?id=${user.id}">Edytuj</a> <a
-                                    href="user/show?id=${user.id}">Pokaż</a></td>
+                                    href="/user/show?id=${user.id}">Pokaż</a></td>
                         </tr>
                     </c:forEach>
                     </tbody>
