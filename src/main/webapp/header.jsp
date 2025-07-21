@@ -40,9 +40,9 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-      <a class="nav-link" href="users/list.jsp">
+      <a class="nav-link" href="/user/list">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span></a>
+        <span>UsersCRUD</span></a>
     </li>
 
 
