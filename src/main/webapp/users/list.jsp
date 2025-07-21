@@ -13,11 +13,26 @@
             <a href="/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Dodaj użytkownika</a>
           </div>
 
-
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nazwa użytkownika</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Akcja</th>
+                </tr>
+                </thead>
+                <tbody>
                 <c:forEach var="user" items="${users}">
-                    ${user.getId()} ${user.getUserName()} ${user.getEmail()} <br/>
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.userName}</td>
+                        <td>${user.email}</td>
+                        <td><a href="/user/delete?id=${user.id}">Usuń</a> <a href="/user/edit?id=${user.id}">Edytuj</a> <a href="user/show?id=${user.id}">Pokaż</a></td>
+                    </tr>
                 </c:forEach>
-
+                </tbody>
+            </table>
 
         </div>
         <!-- /.container-fluid -->
